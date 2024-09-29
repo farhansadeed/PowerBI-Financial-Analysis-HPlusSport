@@ -3,6 +3,7 @@ An interactive Power BI dashboard analyzing H+ Sport's financial performance to 
 
 # :man_student:Dashboard::electron:
 
+![DashBoard.png](https://github.com/farhansadeed/PowerBI-Financial-Analysis-HPlusSport/blob/main/DashBoard.png)
 
 ## Dataset
 
