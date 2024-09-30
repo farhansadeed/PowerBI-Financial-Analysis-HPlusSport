@@ -9,33 +9,33 @@ An interactive Power BI dashboard analyzing H+ Sport's financial performance to 
 
 The dataset includes monthly aggregated financial data from 2012 to 2014, covering:
 
-**Date: Monthly dates, aggregated with the day always being the first.
-**Units Sold: Number of units sold per product.
-**Sales Price: Selling price per unit.
-**Manufacturing Price: Cost to produce each unit (COGS).
-**Gross Sales: Calculated as Units Sold × Sales Price.
-**COGS: Calculated as Units Sold × Manufacturing Price.
-**Discounts: Any discounts applied to sales.
-**Profit: Calculated using the relationship Sales = COGS + Profit.
+**Date**: Monthly dates, aggregated with the day always being the first.
+**Units Sold**: Number of units sold per product.
+**Sales Price**: Selling price per unit.
+**Manufacturing Price**: Cost to produce each unit (COGS).
+**Gross Sales**: Calculated as Units Sold × Sales Price.
+**COGS**: Calculated as Units Sold × Manufacturing Price.
+**Discounts**: Any discounts applied to sales.
+**Profit**: Calculated using the relationship Sales = COGS + Profit.
 
 Financial Relationships Used:
-**Sales = COGS + Profit
-**Gross Sales = Sales + Discounts
-**Units Sold × Sales Price = Gross Sales
-**Units Sold × Manufacturing Price = COGS
+**Sales** = COGS + Profit
+**Gross Sales** = Sales + Discounts
+**Units Sold × Sales Price** = Gross Sales
+**Units Sold × Manufacturing Price** = COGS
 
 ## Analyses Performed
 
 1. COGS and Profit Over Time:
 
-**Challenge: Initial visualization displayed overlapping data for January across years.
-**Solution: Adjusted the X-axis to use 'Date' instead of 'Date Hierarchy' for correct time-series representation.
-**Visualization: Used a stacked column chart to represent discrete monthly data effectively.
+**Challenge**: Initial visualization displayed overlapping data for January across years.
+**Solution**: Adjusted the X-axis to use 'Date' instead of 'Date Hierarchy' for correct time-series representation.
+**Visualization**: Used a stacked column chart to represent discrete monthly data effectively.
 
 2. Financial Data Formatting:
 
-**Issue: Y-axis labels were in millions and not displaying financial figures appropriately.
-**Solution: Changed the data type of financial columns (Gross Sales, Discounts, Sales, COGS, Profit) to 'Currency' for proper financial representation.
+**Issue**: Y-axis labels were in millions and not displaying financial figures appropriately.
+**Solution**: Changed the data type of financial columns (Gross Sales, Discounts, Sales, COGS, Profit) to 'Currency' for proper financial representation.
 #Enhancements:
 **Removed unnecessary axis titles.
 **Enabled total labels with one decimal place for clarity.
@@ -43,12 +43,12 @@ Financial Relationships Used:
 
 3. Product Profitability Analysis:
 
-**Improvement: Replaced standard slicers with a tree map to provide a visual representation of product profitability.
-**Visualization: The tree map displays products categorized by profit, enhancing engagement and insight.
+**Improvement**: Replaced standard slicers with a tree map to provide a visual representation of product profitability.
+**Visualization**: The tree map displays products categorized by profit, enhancing engagement and insight.
 
 Date Slicer Synchronization:
-**Problem: Date slicer was incorrectly showing data from 2022 to 2024.
-**Solution: Implemented a relative date slicer with an anchor date to ensure consistency and correct data range from 2012 to 2014.
+**Problem**: Date slicer was incorrectly showing data from 2022 to 2024.
+**Solution**: Implemented a relative date slicer with an anchor date to ensure consistency and correct data range from 2012 to 2014.
 
 4. Key Performance Indicators (KPIs):
 
